@@ -1652,7 +1652,7 @@ Map symbol: ISOM 106</description>
                 </point_symbol>
             </symbol>
             <symbol type="1" id="42" code="1.6" name="|D| Earth wall">
-                <description>A narrow wall of earth projecting above the surrounding terrain; may be partially stone faced, usually man-made. Used with symbol 8.11 to indicate a ruined earth wall.s
+                <description>A narrow wall of earth projecting above the surrounding terrain; may be partially stone faced, usually man-made. Used with symbol 8.11 to indicate a ruined earth wall.
 
 Map symbols: ISOM 107, 108</description>
                 <point_symbol inner_radius="1000" inner_color="-1" outer_width="0" outer_color="-1" elements="5">
@@ -10354,7 +10354,7 @@ The orientation of the symbol indicates the direction in which the corner points
             </part>
         </parts>
         <templates count="1" first_front_template="1">
-            <template open="true" name="forest sample.omap" path="../../examples/forest sample.omap" relpath="../../examples/forest sample.omap">
+            <template type="TemplateMap" open="true" name="forest sample.omap" path="../../examples/forest sample.omap" relpath="../../examples/forest sample.omap">
                 <transformations adjustment_dirty="true" passpoints="0">
                     <transformation role="active" x="-131449" y="-52124" scale_x="1" scale_y="1" rotation="0"/>
                     <transformation role="other" x="0" y="0" scale_x="1" scale_y="1" rotation="0"/>

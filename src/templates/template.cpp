@@ -27,6 +27,7 @@
 #include <iterator>
 #include <new>
 #include <type_traits>
+#include <utility>
 
 #include <Qt>
 #include <QtMath>
@@ -41,6 +42,7 @@
 #include <QMessageBox>
 #include <QPainter>
 #include <QRectF>
+#include <QSizeF>
 #include <QStringRef>
 #include <QTransform>
 #include <QXmlStreamAttributes>
@@ -57,6 +59,7 @@
 #include "gui/file_dialog.h"
 #include "templates/template_image.h"
 #include "templates/template_map.h"
+#include "templates/template_placeholder.h"
 #include "templates/template_track.h"
 #include "util/backports.h"  // IWYU pragma: keep
 #include "util/util.h"
@@ -277,17 +280,11 @@ void Template::setErrorString(const QString &text)
 void Template::saveTemplateConfiguration(QXmlStreamWriter& xml, bool open, const QDir* map_dir) const
 {
 	xml.writeStartElement(QString::fromLatin1("template"));
+	xml.writeAttribute(QString::fromLatin1("type"), QString::fromUtf8(getTemplateType()));
 	xml.writeAttribute(QString::fromLatin1("open"), QString::fromLatin1(open ? "true" : "false"));
 	xml.writeAttribute(QString::fromLatin1("name"), getTemplateFilename());
 	auto primary_path = getTemplatePath();
-	auto relative_path = getTemplateRelativePath();
-	if (getTemplateState() != Invalid)
-	{
-		if (map_dir)
-			relative_path = map_dir->relativeFilePath(primary_path);
-		else if (relative_path.isEmpty())
-			relative_path = getTemplateFilename();
-	}
+	auto relative_path = getTemplateRelativePath(map_dir);
 	if (suppressAbsolutePaths && QFileInfo(primary_path).isAbsolute())
 		primary_path = relative_path;
 	xml.writeAttribute(QString::fromLatin1("path"), primary_path);
@@ -346,10 +343,13 @@ std::unique_ptr<Template> Template::loadTemplateConfiguration(QXmlStreamReader& 
 	if (attributes.hasAttribute(QLatin1String("open")))
 		open = (attributes.value(QLatin1String("open")) == QLatin1String("true"));
 	
+	auto const type = attributes.value(QLatin1String("type"));
 	QString path = attributes.value(QLatin1String("path")).toString();
-	auto temp = templateForFile(path, &map);
+	auto temp = templateForType(type, path, &map);
+	if (!temp && type.length() == 0)
+		temp = templateForPath(path, &map);
 	if (!temp)
-		temp = std::make_unique<TemplateImage>(path, &map); // fallback
+		temp = std::make_unique<TemplatePlaceholder>(type.toUtf8(), path, &map);
 	
 	temp->setTemplateRelativePath(attributes.value(QLatin1String("relpath")).toString());
 	if (attributes.hasAttribute(QLatin1String("name")))
@@ -445,6 +445,12 @@ Q_ASSERT(temp->passpoints.size() == 0);
 		}
 	}
 	
+	if (temp && !temp->finishTypeSpecificTemplateConfiguration())
+		temp.reset();
+	
+	if (temp)
+		temp->setTemplateState(Unloaded);
+	
 	return temp;
 }
 
@@ -467,7 +473,7 @@ void Template::switchTemplateFile(const QString& new_path, bool load_file)
 	template_state         = Template::Unloaded;
 	
 	if (load_file)
-		loadTemplateFile(false);
+		loadTemplateFile();
 }
 
 bool Template::execSwitchTemplateFileDialog(QWidget* dialog_parent)
@@ -483,15 +489,37 @@ bool Template::execSwitchTemplateFileDialog(QWidget* dialog_parent)
 	const State   old_state = getTemplateState();
 	const QString old_path  = getTemplatePath();
 	
-	switchTemplateFile(new_path, true);
+	if (auto* placeholder = qobject_cast<TemplatePlaceholder*>(this))
+	{
+		setTemplatePath(new_path);
+		auto new_temp = placeholder->makeActualTemplate();
+		if (new_temp)
+		{
+			auto pos = map->findTemplateIndex(this);
+			if (pos >= 0)
+			{
+				auto self = map->setTemplate(pos, std::move(new_temp));
+				if (map->getTemplate(pos)->loadTemplateFile())
+				{
+					// Loading succeeded. This object must be destroyed.
+					self.release()->deleteLater();
+					return true;
+				}
+				// Loading failed. This object must be put back.
+				map->setTemplate(pos, std::move(self));
+				return false;
+			}
+		}
+	}
+	else
+	{
+		switchTemplateFile(new_path, true);
+	}
 	if (getTemplateState() != Loaded)
 	{
 		QString error_template = QCoreApplication::translate("OpenOrienteering::TemplateListWidget", "Cannot open template\n%1:\n%2").arg(new_path);
 		QString error = errorString();
 		Q_ASSERT(!error.isEmpty());
-		QMessageBox::warning(dialog_parent,
-		                     tr("Error"),
-		                     error_template.arg(error));
 		
 		// Revert change
 		switchTemplateFile(old_path, old_state == Loaded);
@@ -499,21 +527,25 @@ bool Template::execSwitchTemplateFileDialog(QWidget* dialog_parent)
 		{
 			template_state = Invalid;
 		}
+		
+		QMessageBox::warning(dialog_parent, tr("Error"), error_template.arg(error));
 		return false;
 	}
 	
 	return true;
 }
 
-bool Template::configureAndLoad(QWidget* dialog_parent, MapView* view)
+bool Template::setupAndLoad(QWidget* dialog_parent, const MapView* view)
 {
+	Q_ASSERT(getTemplateState() == Template::Configuring);
+	
 	bool center_in_view = true;
 	
-	if (!preLoadConfiguration(dialog_parent))
+	if (!preLoadSetup(dialog_parent))
 		return false;
-	if (!loadTemplateFile(true))
+	if (!loadTemplateFile())
 		return false;
-	if (!postLoadConfiguration(dialog_parent, center_in_view))
+	if (!postLoadSetup(dialog_parent, center_in_view))
 	{
 		unloadTemplateFile();
 		return false;
@@ -523,7 +555,7 @@ bool Template::configureAndLoad(QWidget* dialog_parent, MapView* view)
 	if (!isTemplateGeoreferenced() && center_in_view)
 	{
 		auto offset = MapCoord { calculateTemplateBoundingBox().center() };
-		setTemplatePosition(view->center() - offset);
+		setTemplatePosition(view->center() - offset + templatePosition());
 	}
 	
 	return true;
@@ -595,15 +627,15 @@ Template::LookupResult Template::tryToFindTemplateFile(const QString& map_path)
 bool Template::tryToFindAndReloadTemplateFile(const QString& map_path)
 {
 	return tryToFindTemplateFile(map_path) != NotFound
-	       && loadTemplateFile(false);
+	       && loadTemplateFile();
 }
 
-bool Template::preLoadConfiguration(QWidget* /*dialog_parent*/)
+bool Template::preLoadSetup(QWidget* /*dialog_parent*/)
 {
 	return true;
 }
 
-bool Template::loadTemplateFile(bool configuring)
+bool Template::loadTemplateFile()
 {
 	Q_ASSERT(template_state != Loaded);
 	
@@ -617,9 +649,10 @@ bool Template::loadTemplateFile(bool configuring)
 			template_state = Invalid;
 			setErrorString(tr("No such file."));
 		}
-		else if (loadTemplateFileImpl(configuring))
+		else if (loadTemplateFileImpl())
 		{
 			template_state = Loaded;
+			setTemplateAreaDirty();
 		}
 		else
 		{
@@ -650,7 +683,7 @@ bool Template::loadTemplateFile(bool configuring)
 	return template_state == Loaded;
 }
 
-bool Template::postLoadConfiguration(QWidget* /*dialog_parent*/, bool& /*out_center_in_view*/)
+bool Template::postLoadSetup(QWidget* /*dialog_parent*/, bool& /*out_center_in_view*/)
 {
 	return true;
 }
@@ -670,7 +703,7 @@ void Template::unloadTemplateFile()
 
 
 // virtual
-bool Template::canChangeTemplateGeoreferenced()
+bool Template::canChangeTemplateGeoreferenced() const
 {
 	return false;
 }
@@ -706,6 +739,16 @@ QRectF Template::getTemplateExtent() const
 {
 	Q_ASSERT(!is_georeferenced);
 	return infiniteRectF();
+}
+
+QRectF Template::boundingRect() const
+{
+	auto const extent = getTemplateExtent();
+	auto rect = QRectF { templateToMap(extent.topLeft()), QSizeF{} };
+	rectInclude(rect, templateToMap(extent.topRight()));
+	rectInclude(rect, templateToMap(extent.bottomRight()));
+	rectInclude(rect, templateToMap(extent.bottomLeft()));
+	return rect;
 }
 
 void Template::scale(double factor, const MapCoord& center)
@@ -757,7 +800,7 @@ QRectF Template::calculateTemplateBoundingBox() const
 	return bbox;
 }
 
-void Template::drawOntoTemplate(not_null<MapCoordF*> coords, int num_coords, const QColor& color, qreal width, QRectF map_bbox)
+void Template::drawOntoTemplate(not_null<MapCoordF*> coords, int num_coords, const QColor& color, qreal width, QRectF map_bbox, ScribbleOptions mode)
 {
 	Q_ASSERT(canBeDrawnOnto());
 	Q_ASSERT(num_coords > 1);
@@ -772,7 +815,7 @@ void Template::drawOntoTemplate(not_null<MapCoordF*> coords, int num_coords, con
 	QRectF radius_bbox = QRectF(map_bbox.left() - radius, map_bbox.top() - radius,
 								map_bbox.width() + 2*radius, map_bbox.height() + 2*radius);
 	
-	drawOntoTemplateImpl(coords, num_coords, color, width);
+	drawOntoTemplateImpl(coords, num_coords, color, width, mode);
 	map->setTemplateAreaDirty(this, radius_bbox, 0);
 	
 	setHasUnsavedChanges(true);
@@ -812,7 +855,7 @@ void Template::switchTransforms()
 	
 	adjusted = !adjusted;
 	setTemplateAreaDirty();
-	map->setTemplatesDirty();
+	map->emitTemplateChanged(this);
 }
 void Template::getTransform(TemplateTransform& out) const
 {
@@ -828,7 +871,7 @@ void Template::setTransform(const TemplateTransform& transform)
 	updateTransformationMatrices();
 	
 	setTemplateAreaDirty();
-	map->setTemplatesDirty();
+	map->emitTemplateChanged(this);
 }
 void Template::getOtherTransform(TemplateTransform& out) const
 {
@@ -852,6 +895,16 @@ void Template::setTemplateFileInfo(const QFileInfo& file_info)
 void Template::setTemplatePath(const QString& value)
 {
 	setTemplateFileInfo(QFileInfo(value));
+}
+
+QString Template::getTemplateRelativePath(const QDir* map_dir) const
+{
+	auto path = getTemplateRelativePath();
+	if (getTemplateState() != Invalid && map_dir)
+		path = map_dir->relativeFilePath(getTemplatePath());
+	if (path.isEmpty())
+		path = getTemplateFilename();
+	return path;
 }
 
 void Template::setHasUnsavedChanges(bool value)
@@ -885,57 +938,102 @@ const std::vector<QByteArray>& Template::supportedExtensions()
 		auto& image_extensions = TemplateImage::supportedExtensions();
 		auto& map_extensions   = TemplateMap::supportedExtensions();
 #ifdef MAPPER_USE_GDAL
+		auto& gdal_extensions  = GdalTemplate::supportedExtensions();
 		auto& ogr_extensions   = OgrTemplate::supportedExtensions();
 #else
-		auto ogr_extensions    = std::vector<QByteArray>{ };
+		auto const gdal_extensions = std::vector<QByteArray>{ };
+		auto const& ogr_extensions = gdal_extensions;
 #endif
 		auto& track_extensions = TemplateTrack::supportedExtensions();
 		extensions.reserve(image_extensions.size()
 		                   + map_extensions.size()
+		                   + gdal_extensions.size()
 		                   + ogr_extensions.size()
 		                   + track_extensions.size());
 		extensions.insert(end(extensions), begin(image_extensions), end(image_extensions));
 		extensions.insert(end(extensions), begin(map_extensions), end(map_extensions));
+		extensions.insert(end(extensions), begin(gdal_extensions), end(gdal_extensions));
 		extensions.insert(end(extensions), begin(ogr_extensions), end(ogr_extensions));
 		extensions.insert(end(extensions), begin(track_extensions), end(track_extensions));
 	}
 	return extensions;
 }
 
-std::unique_ptr<Template> Template::templateForFile(const QString& path, Map* map)
+namespace {
+
+bool endsWithAnyOf(const QString& path, const std::vector<QByteArray>& list)
 {
-	auto path_ends_with_any_of = [path](const std::vector<QByteArray>& list) -> bool {
-		using namespace std;
-		return any_of(begin(list), end(list), [path](const QByteArray& extension) {
-			return path.size() > extension.size()
-			       && path[path.size() - extension.size() - 1] == QLatin1Char('.')
-			       && path.endsWith(QLatin1String(extension), Qt::CaseInsensitive);
-		} );
-	};
+	using namespace std;
+	return any_of(begin(list), end(list), [path](const QByteArray& extension) {
+		return path.size() > extension.size()
+		       && path[path.size() - extension.size() - 1] == QLatin1Char('.')
+		       && path.endsWith(QLatin1String(extension), Qt::CaseInsensitive);
+	} );
+}
+
+}  // namespace
+
+std::unique_ptr<Template> Template::templateForPath(const QString& path, Map* map)
+{
+#ifdef MAPPER_USE_GDAL
+#  define HANDLED_BY_GDAL(expr) expr
+#else
+#  define HANDLED_BY_GDAL(expr) false
+#endif
 	
 	std::unique_ptr<Template> t;
-	// Start with placeholder 'if', for consistency in the following macro/if-else sequence
-	if (false)  // NOLINT
-		{} // nothing
-#ifdef MAPPER_USE_GDAL
-	else if (path_ends_with_any_of(GdalTemplate::supportedExtensions()))
-		t = std::make_unique<GdalTemplate>(path, map);
-#endif 
-	else if (path_ends_with_any_of(TemplateImage::supportedExtensions()))
+	if (endsWithAnyOf(path, TemplateImage::supportedExtensions())
+	    && !HANDLED_BY_GDAL(endsWithAnyOf(path, GdalTemplate::supportedExtensions())))
 		t = std::make_unique<TemplateImage>(path, map);
-	else if (path_ends_with_any_of(TemplateMap::supportedExtensions()))
+	else if (endsWithAnyOf(path, TemplateMap::supportedExtensions()))
 		t = std::make_unique<TemplateMap>(path, map);
-#ifdef MAPPER_USE_GDAL
-	else if (path_ends_with_any_of(OgrTemplate::supportedExtensions()))
-		t = std::make_unique<OgrTemplate>(path, map);
-#endif
-	else if (path_ends_with_any_of(TemplateTrack::supportedExtensions()))
+	else if (endsWithAnyOf(path, TemplateTrack::supportedExtensions())
+	         && !HANDLED_BY_GDAL(endsWithAnyOf(path, OgrTemplate::supportedExtensions())))
 		t = std::make_unique<TemplateTrack>(path, map);
 #ifdef MAPPER_USE_GDAL
-	else
+	else if (GdalTemplate::canRead(path))
+		t = std::make_unique<GdalTemplate>(path, map);
+	else if (OgrTemplate::canRead(path))
+		t = std::make_unique<OgrTemplate>(path, map);
+	else if (endsWithAnyOf(path, GdalTemplate::supportedExtensions())
+	         && !endsWithAnyOf(path, OgrTemplate::supportedExtensions()))
+		t = std::make_unique<GdalTemplate>(path, map);
+	else if (endsWithAnyOf(path, OgrTemplate::supportedExtensions())
+	         && !endsWithAnyOf(path, GdalTemplate::supportedExtensions()))
 		t = std::make_unique<OgrTemplate>(path, map);
 #endif
 	
+	return t;
+}
+
+std::unique_ptr<Template> Template::templateForType(const QStringRef& type, const QString& path, Map* map)
+{
+	std::unique_ptr<Template> t;
+	
+	// We must respect the customizable handling of tracks,
+	// which is reflected in OgrTemplate::supportedExtensions().
+	auto const is_track = endsWithAnyOf(path, TemplateTrack::supportedExtensions());
+#ifdef MAPPER_USE_GDAL
+	auto const track_with_gdal = (is_track && endsWithAnyOf(path, OgrTemplate::supportedExtensions()));
+#else
+	constexpr auto const track_with_gdal = false;
+#endif
+	
+	auto type_cstring = type.toUtf8();
+	if (type_cstring == "TemplateImage")
+		t = std::make_unique<TemplateImage>(path, map);
+	else if (type_cstring == "TemplateMap")
+		t = std::make_unique<TemplateMap>(path, map);
+	else if (type_cstring == "OgrTemplate" && is_track && !track_with_gdal)
+		t = std::make_unique<TemplateTrack>(path, map);
+	else if (type_cstring == "TemplateTrack" && !track_with_gdal)
+		t = std::make_unique<TemplateTrack>(path, map);
+#ifdef MAPPER_USE_GDAL
+	else if (type_cstring == "GdalTemplate")
+		t = std::make_unique<GdalTemplate>(path, map);
+	else if (type_cstring == "OgrTemplate" || type_cstring == "TemplateTrack")
+		t = std::make_unique<OgrTemplate>(path, map);
+#endif
 	return t;
 }
 
@@ -952,7 +1050,14 @@ bool Template::loadTypeSpecificTemplateConfiguration(QXmlStreamReader& xml)
 	return true;
 }
 
-void Template::drawOntoTemplateImpl(MapCoordF* /*coords*/, int /*num_coords*/, const QColor& /*color*/, qreal /*width*/)
+bool Template::finishTypeSpecificTemplateConfiguration()
+{
+	return true;
+}
+
+
+
+void Template::drawOntoTemplateImpl(MapCoordF* /*coords*/, int /*num_coords*/, const QColor& /*color*/, qreal /*width*/, ScribbleOptions /*mode*/)
 {
 	// nothing
 }

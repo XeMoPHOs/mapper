@@ -1,5 +1,5 @@
 #
-#    Copyright 2018-2019 Kai Pastor
+#    Copyright 2018-2020 Kai Pastor
 #    
 #    This file is part of OpenOrienteering.
 # 
@@ -26,6 +26,75 @@ if(ANDROID)
 endif()
 
 set(CMAKE_AUTOMOC ON)
+
+
+# FakePositionPlugin
+
+set(FAKE_POSITION_DEFINITIONS
+  PRIVATE
+    QT_NO_CAST_FROM_ASCII
+    QT_NO_CAST_TO_ASCII
+    QT_USE_QSTRINGBUILDER
+    QT_STATICPLUGIN
+)
+set(FAKE_POSITION_SOURCES )
+set(FAKE_POSITION_LINK_LIBRARIES )
+if(TARGET Qt5::Positioning)
+	list(APPEND FAKE_POSITION_DEFINITIONS
+	  PUBLIC MAPPER_USE_FAKE_POSITION_PLUGIN
+	)
+	list(APPEND FAKE_POSITION_SOURCES
+	  fake_position_plugin.cpp
+	  fake_position_plugin.json
+	  fake_position_source.cpp
+	)
+	list(APPEND FAKE_POSITION_LINK_LIBRARIES
+	  PRIVATE Qt5::Gui Qt5::Positioning
+	)
+endif()
+
+add_library(fake_position_source STATIC  ${FAKE_POSITION_SOURCES})
+target_compile_definitions(fake_position_source  ${FAKE_POSITION_DEFINITIONS})
+target_include_directories(fake_position_source  PRIVATE "${PROJECT_SOURCE_DIR}/src")
+target_link_libraries(fake_position_source  ${FAKE_POSITION_LINK_LIBRARIES})
+
+
+# OpenOrienteeringNmeaPlugin
+#
+# For testing purposes, we build this plugin on all platforms,
+# but we register it in main.cpp on Linux only.
+
+set(NMEA_POSITION_DEFINITIONS
+  PRIVATE
+    QT_NO_CAST_FROM_ASCII
+    QT_NO_CAST_TO_ASCII
+    QT_USE_QSTRINGBUILDER
+    QT_STATICPLUGIN
+)
+set(NMEA_POSITION_SOURCES )
+set(NMEA_POSITION_LINK_LIBRARIES )
+if(TARGET Qt5::Positioning)
+	list(APPEND NMEA_POSITION_DEFINITIONS
+	  PUBLIC MAPPER_USE_NMEA_POSITION_PLUGIN
+	)
+	list(APPEND NMEA_POSITION_SOURCES
+	  nmea_position_plugin.cpp
+	  nmea_position_plugin.json
+	  #nmea_position_source.cpp
+	)
+	list(APPEND NMEA_POSITION_LINK_LIBRARIES
+	  PRIVATE Qt5::Positioning
+	)
+	if(TARGET Qt5::SerialPort)
+		list(APPEND NMEA_POSITION_LINK_LIBRARIES
+		  PRIVATE Qt5::SerialPort
+		)
+	endif()
+endif()
+
+add_library(nmea_position_source STATIC  ${NMEA_POSITION_SOURCES})
+target_compile_definitions(nmea_position_source  ${NMEA_POSITION_DEFINITIONS})
+target_link_libraries(nmea_position_source  ${NMEA_POSITION_LINK_LIBRARIES})
 
 
 # PowershellPositionPlugin
@@ -90,6 +159,7 @@ target_compile_definitions(mapper-sensors  ${MAPPER_SENSORS_DEFINITIONS})
 target_include_directories(mapper-sensors  PRIVATE "${PROJECT_SOURCE_DIR}/src")
 target_link_libraries(mapper-sensors
   PUBLIC
+    nmea_position_source
     powershell_position_source
     Qt5::Core
     Qt5::Gui
@@ -101,10 +171,18 @@ foreach(lib Qt5::Positioning Qt5::Sensors Qt5::SerialPort Qt5::AndroidExtras)
 	endif()
 endforeach()
 
+if(Mapper_DEVELOPMENT_BUILD)
+	target_link_libraries(mapper-sensors
+	  PUBLIC
+		fake_position_source
+	)
+endif()
+
 
 # Translations
 
 mapper_translations_sources(
   ${MAPPER_SENSORS_SOURCES}
+  ${NMEA_POSITION_SOURCES}
   ${POWERSHELL_POSITION_SOURCES}
 )

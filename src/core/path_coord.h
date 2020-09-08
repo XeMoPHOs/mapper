@@ -22,6 +22,7 @@
 #ifndef OPENORIENTEERING_PATH_COORD_H
 #define OPENORIENTEERING_PATH_COORD_H
 
+#include <memory>
 #include <vector>
 
 #include <QtGlobal>
@@ -31,6 +32,7 @@
 namespace OpenOrienteering {
 
 class PathCoordVector;
+class PathObject;
 
 
 /**
@@ -156,6 +158,28 @@ public:
 
 
 /**
+ * The structure returned when looking for closest coordinates on a path.
+ */
+struct ClosestPathCoord
+{
+	PathCoord path_coord;
+	double distance_squared;
+};
+
+
+
+/**
+ * The structure returned when looking for closest coordinates on the border of a path.
+ */
+struct ClosestBorderPathCoord
+{
+	std::shared_ptr<PathObject> border;
+	ClosestPathCoord closest;
+};
+
+
+
+/**
  * An arbitrary position on a path.
  * 
  * A SplitPathCoord supports processing paths in connection with PathCoordVector.
@@ -174,7 +198,7 @@ public:
 	/** Position. */
 	MapCoordF pos;
 	
-	/** Index of the cooresponding or preceding map coordinate and flags. */
+	/** Index of the corresponding or preceding map coordinate and flags. */
 	PathCoord::size_type index;
 	
 	/** Relative location of this position on the MapCoordVector edge ([0.0, 1.0)). */

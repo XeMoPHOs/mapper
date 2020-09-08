@@ -1,187 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_Hans">
+<TS version="2.1" language="lv">
 <context>
     <name>ISOM 2017-2</name>
     <message>
         <source>Purple for course overprint</source>
         <comment>Color 0</comment>
-        <translation>路线叠印紫色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White for course overprint</source>
         <comment>Color 1</comment>
-        <translation>路线叠印白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 100%</source>
         <comment>Color 2</comment>
-        <translation>黑色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100%</source>
         <comment>Color 3</comment>
-        <translation>绿色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White for railway</source>
         <comment>Color 4</comment>
-        <translation>铁路符号的白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 100%</source>
         <comment>Color 5</comment>
-        <translation>蓝色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Brown 100%</source>
         <comment>Color 6</comment>
-        <translation>棕色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Purple for track symbols</source>
         <comment>Color 7</comment>
-        <translation>轨道符号的紫色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black below purple for track symbols</source>
         <comment>Color 8</comment>
-        <translation>轨道符号紫色下面的黑色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 65%</source>
         <comment>Color 9</comment>
-        <translation>黑色 65%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 20%</source>
         <comment>Color 10</comment>
-        <translation>黑色 20%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Upper brown 50%</source>
         <comment>Color 11</comment>
-        <translation>上层棕色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black below upper brown 50%</source>
         <comment>Color 12</comment>
-        <translation>上层棕色 50%下的黑色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lower brown 50%</source>
         <comment>Color 13</comment>
-        <translation>下层棕色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black below lower brown 50%</source>
         <comment>Color 14</comment>
-        <translation>下层棕色 50%下的黑色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 100% for area features</source>
         <comment>Color 15</comment>
-        <translation>面状符号填充蓝色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 70%</source>
         <comment>Color 16</comment>
-        <translation>蓝色 70%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 50%</source>
         <comment>Color 17</comment>
-        <translation>蓝色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OpenOrienteering Orange</source>
         <comment>Color 18</comment>
-        <translation>OpenOrinenteering橙色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 100% for narrow ride</source>
         <comment>Color 19</comment>
-        <translation>狭窄行车道用的黄色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 60% for narrow ride</source>
         <comment>Color 20</comment>
-        <translation>狭窄行车道用的绿色 60%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 30% for narrow ride</source>
         <comment>Color 21</comment>
-        <translation>狭窄行车道用的绿色 30%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White over green</source>
         <comment>Color 22</comment>
-        <translation>绿色上层的白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 100%/Green 50%</source>
         <comment>Color 23</comment>
-        <translation>黄色 100%/绿色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 25% (Grey)</source>
         <comment>Color 24</comment>
-        <translation>黑色 25%（灰色）</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100%/Black 50%</source>
         <comment>Color 25</comment>
-        <translation>绿色 100%/黑色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100% for area features</source>
         <comment>Color 26</comment>
-        <translation>面状符号填充绿色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 60%</source>
         <comment>Color 27</comment>
-        <translation>绿色 60%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 30%</source>
         <comment>Color 28</comment>
-        <translation>绿色 30%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100% for undergrowth</source>
         <comment>Color 29</comment>
-        <translation>低矮植被的绿色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White over yellow</source>
         <comment>Color 30</comment>
-        <translation>黄色上层的白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black for open land</source>
         <comment>Color 31</comment>
-        <translation>开阔地的黑色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow</source>
         <comment>Color 32</comment>
-        <translation>黄色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 100% for area features</source>
         <comment>Color 33</comment>
-        <translation>面状符号填充黄色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 50%</source>
         <comment>Color 34</comment>
-        <translation>黄色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Contour</source>
         <comment>Name of symbol 101</comment>
-        <translation>等高线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A line joining points of equal height. The standard vertical interval between contours is 5 m. A contour interval of 2.5 m may be used for flat terrains.
@@ -195,66 +195,52 @@ The minimum length of a contour knoll is 0.9 mm (footprint 13.5 m) and the minim
 A depression must accommodate a slope line, so the minimum length is 1.1 mm (footprint 16.5 m) and the minimum width is 0.7 mm (footprint 10.5 m) outside measure. Smaller, prominent depressions can be represented using symbol Small depression (111) or they can be exaggerated to satisfy the minimum dimension.
 Contours should be adapted (not broken) in order not to touch symbol Small knoll (109) or Small elongated knoll (110).</source>
         <comment>Description of symbol 101</comment>
-        <translation>等高的连接点。等高线之间的标准垂直距离是5米。平坦地形的等高线间距为2.5米。
-在等高线的下侧可以画出坡度线，以明确坡度的方向。当使用时，他们应该放在山凹。
-闭合的轮廓表示一个小山丘或洼地。凹地必须至少有一条斜线。最低高度/深度应为1米。
-相邻的等高线之间的关系很重要。相邻的等高线表示形状和结构。轮廓上的小细节应该避免，因为它们往往掩盖了地形的主要特征。
-如洼地、山凹、山凸、土坎和台地等突出的特征可能需要被夸大。
-绝对高度精度并不重要，但相邻地物之间的相对高度差应尽可能准确地表示在地图上。允许稍微改变轮廓的高度，如果这样可以改进特征的表示。该偏差不应超过等值线间距的25%，应注意相邻特征。
-等高线上的弯道最小为中线至中线0.25毫米(脚印4米)。重入中线或支线的开口，由中线至中线的宽度必须超过0.5毫米(脚印8米)。
-轮廓丘的最小长度为0.9毫米(足迹13.5米)，最小宽度为0.6毫米(足迹9米)。小而突出的小山丘可以用符号Small knoll(109)或小而细长的knoll(110)来表示，也可以在地图上夸张以满足最小维度。
-洼地必须能容纳一条斜坡线，因此最小长度为1.1毫米(占地16.5米)，最小宽度为0.7毫米(占地10.5米)。更小、突出的凹陷可以用符号Small depression(111)表示，也可以通过夸张来满足最小维度。
-为了不接触符号小丘(109)或小伸长丘(110)，轮廓应适应(不破坏)。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Slope line, contour</source>
         <comment>Name of symbol 101.1</comment>
-        <translation>示坡线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Slope lines may be drawn on the lower side of a contour line to clarify the direction of slope. When used, they should be placed in re-entrants.
 A depression has to have at least one slope line.</source>
         <comment>Description of symbol 101.1</comment>
-        <translation>示坡线可画在等高线较低一侧，以说明斜坡的方向。使用时，应画在山窝内。
-陷地必须绘有至少一条示坡线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Index contour</source>
         <comment>Name of symbol 102</comment>
-        <translation>计曲线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Every fifth contour shall be drawn with a thicker line. This is an aid to the quick assessment of height difference and the overall shape of the terrain surface.
 An index contour may be represented as an ordinary contour line in an area with much detail. Small contour knolls and depressions are normally not represented using index contours.
 The index contour level must be carefully selected in flat terrain. The ideal level for the index contour is the central contour in the most prominent slopes.</source>
         <comment>Description of symbol 102</comment>
-        <translation>每第五条等高线须以较粗的线绘画，俾使读图者快速判读出高度差，及地势的大概形状。
-在很细致的区域内，计曲线也可画成一般等高线。表示小丘或陷地的等高线通常不画成计曲线。
-在平坦区域内，须小心选择计曲线的高度。计曲线的理想高度是最显著的斜坡的中央。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Contour value</source>
         <comment>Name of symbol 102.1</comment>
-        <translation>等高线高度</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>An index contour may have a height value assigned. A height value should only be inserted in an index contour in places where other detail is not obscured. It shall be orientated so that the top of the label is on the higher side of the contour. The index value (label) shall be 1.5 mm high and represented in a sans-serif font.</source>
         <comment>Description of symbol 102.1</comment>
-        <translation>可以显示计曲线的高度。高度值不应遮挡其他细节。数字的方向应使得数字的顶部位于等高线较高一侧。高度值须为 1.5 mm 高，并以无衬线体表示。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Form line</source>
         <comment>Name of symbol 103</comment>
-        <translation>辅助等高线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Form lines are used where more information must be given about the shape of the ground. Form lines are added only where representation would be incomplete with ordinary contours. They shall not be used as intermediate contours. Only one form line should be used between neighbouring contours. It is very important that a form line fits logically into the contour system, so the start and end of a form line should be parallel to the neighbouring contours. The gaps between the form line dashes must be placed on reasonably straight sections of the form line. Form lines can be used to differentiate flat knolls and depressions from more distinct ones (minimum height / depth should be 1 m). Excessive use of form lines must be avoided as this disturbs the three-dimensional picture of the ground shape and will complicate map reading.
 Minimum length (non-closed): two dashes.
 Minimum length of a form line, knoll or depression: 1.1 mm (footprint 16.5 m)</source>
         <comment>Description of symbol 103</comment>
-        <translation type="unfinished">在必须提供有关地面形状的更多信息的地方使用了成型线。仅在用普通轮廓表示不完整的地方添加表格线。它们不得用作中间轮廓。相邻轮廓之间只能使用一条造型线。形状线在逻辑上适合轮廓系统非常重要，因此形状线的起点和终点应与相邻轮廓平行。成型线虚线之间的间隙必须放置在成型线的合理直线部分上。模板线可用于区分平面山丘和凹陷与更明显的凹陷（最小高度/深度应为1 m）。必须避免过度使用模板线，因为这会干扰地面形状的三维图像，并使地图读取变得复杂。
-最小长度（非闭合）：两个破折号。
-模板线，小节或凹陷的最小长度：1.1毫米（占地面积16.5 m）</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Slope line, formline</source>
@@ -692,7 +678,7 @@ of the boulders.</source>
     <message>
         <source>Large boulder</source>
         <comment>Name of symbol 205</comment>
-        <translation type="unfinished">大石</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A particularly large and distinct boulder. A large boulder should be more than 2 m high.
@@ -2268,8 +2254,7 @@ An easily runnable stairway or indistinct stairway should be drawn as a footpath
         <source>Magnetic north lines are lines placed on the map pointing to magnetic north, parallel to the sides of the paper. Their spacing on the map shall be 20 mm on the map which represents 300 m on the ground at the scale of 1:15 000. If the map is enlarged to 1:10 000, the spacing of the lines will be 30 mm on the map.
 North lines shall be broken to improve the legibility of the map, for instance where they would obscure small features. In areas with very few water features, blue lines may be used.</source>
         <comment>Description of symbol 601.1</comment>
-        <translation>磁北线在地图上指向磁北方，与纸的一边平行。在 1:15,000 地图上，其间隔应为 20 mm, 对应实地 300 m. 倘地图放大至 1:10,000, 则磁北线间隔应为 30 mm.
-如果将磁北线断开可以使地图更可读，则须将之断开，例如当磁北线会遮挡细小的特征物时。在很少水文特征的区域，可以使用蓝线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>North lines pattern</source>
@@ -2280,8 +2265,7 @@ North lines shall be broken to improve the legibility of the map, for instance w
         <source>Magnetic north lines are lines placed on the map pointing to magnetic north, parallel to the sides of the paper. Their spacing on the map shall be 20 mm on the map which represents 300 m on the ground at the scale of 1:15 000. If the map is enlarged to 1:10 000, the spacing of the lines will be 30 mm on the map.
 North lines shall be broken to improve the legibility of the map, for instance where they would obscure small features. In areas with very few water features, blue lines may be used.</source>
         <comment>Description of symbol 601.2</comment>
-        <translation>磁北线在地图上指向磁北方，与纸的一边平行。在 1:15,000 地图上，其间隔应为 20 mm, 对应实地 300 m. 倘地图放大至 1:10,000, 则磁北线间隔应为 30 mm.
-如果将磁北线断开可以使地图更可读，则须将之断开，例如当磁北线会遮挡细小的特征物时。在很少水文特征的区域，可以使用蓝线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Magnetic north line, blue</source>
@@ -2292,20 +2276,18 @@ North lines shall be broken to improve the legibility of the map, for instance w
         <source>Magnetic north lines are lines placed on the map pointing to magnetic north, parallel to the sides of the paper. Their spacing on the map shall be 20 mm on the map which represents 300 m on the ground at the scale of 1:15 000. If the map is enlarged to 1:10 000, the spacing of the lines will be 30 mm on the map.
 North lines shall be broken to improve the legibility of the map, for instance where they would obscure small features. In areas with very few water features, blue lines may be used.</source>
         <comment>Description of symbol 601.3</comment>
-        <translation>磁北线在地图上指向磁北方，与纸的一边平行。在 1:15,000 地图上，其间隔应为 20 mm, 对应实地 300 m. 倘地图放大至 1:10,000, 则磁北线间隔应为 30 mm.
-如果将磁北线断开可以使地图更可读，则须将之断开，例如当磁北线会遮挡细小的特征物时。在很少水文特征的区域，可以使用蓝线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>North lines pattern, blue</source>
         <comment>Name of symbol 601.4</comment>
-        <translation>磁北线，蓝色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Magnetic north lines are lines placed on the map pointing to magnetic north, parallel to the sides of the paper. Their spacing on the map shall be 20 mm on the map which represents 300 m on the ground at the scale of 1:15 000. If the map is enlarged to 1:10 000, the spacing of the lines will be 30 mm on the map.
 North lines shall be broken to improve the legibility of the map, for instance where they would obscure small features. In areas with very few water features, blue lines may be used.</source>
         <comment>Description of symbol 601.4</comment>
-        <translation>磁北线在地图上指向磁北方，与纸的一边平行。在 1:15,000 地图上，其间隔应为 20 mm, 对应实地 300 m. 倘地图放大至 1:10,000, 则磁北线间隔应为 30 mm.
-如果将磁北线断开可以使地图更可读，则须将之断开，例如当磁北线会遮挡细小的特征物时。在很少水文特征的区域，可以使用蓝线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Registration mark</source>
@@ -2344,22 +2326,22 @@ Spot heights must only be used where they do not conflict with other symbols.</s
     <message>
         <source>Start</source>
         <comment>Name of symbol 701</comment>
-        <translation>起点</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The place where the orienteering starts. The centre of the triangle shows the precise position where the orienteering course starts. The start must be on a clearly identifiable point on the map. The triangle points in the direction of the first control.</source>
         <comment>Description of symbol 701</comment>
-        <translation>定向赛程的起点。三角形的中心位于赛程的确切起点。起点须为图上一个能够清晰辨认的点。三角形指向第一个控制点。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Map issue point</source>
         <comment>Name of symbol 702</comment>
-        <translation>发图点</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>If there is a marked route to the start point, the map issue point is marked using this symbol.</source>
         <comment>Description of symbol 702</comment>
-        <translation>倘若有指定路线前往起点，则派发地图的位置以此符号表示。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Control point</source>
@@ -2542,182 +2524,27 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
 <context>
     <name>ISOM2017</name>
     <message>
-        <source>Black 65%</source>
-        <comment>Color 3</comment>
-        <translation>黑色 65%</translation>
+        <source>Blue</source>
+        <comment>Color 8</comment>
+        <translation>Zils</translation>
     </message>
     <message>
-        <source>Black 20%</source>
-        <comment>Color 4</comment>
-        <translation>黑色 20%</translation>
-    </message>
-    <message>
-        <source>Blue 50%</source>
-        <comment>Color 9</comment>
-        <translation>蓝色 50%</translation>
-    </message>
-    <message>
-        <source>OpenOrienteering Orange</source>
-        <comment>Color 11</comment>
-        <translation>OpenOrinenteering橙色</translation>
-    </message>
-    <message>
-        <source>Black 25% (Grey)</source>
-        <comment>Color 12</comment>
-        <translation>黑色 25%（灰色）</translation>
-    </message>
-    <message>
-        <source>Yellow</source>
-        <comment>Color 26</comment>
-        <translation>黄色</translation>
-    </message>
-    <message>
-        <source>Yellow 50%</source>
-        <comment>Color 27</comment>
-        <translation>黄色 50%</translation>
-    </message>
-    <message>
-        <source>Contour</source>
-        <comment>Name of symbol 101</comment>
-        <translation>等高线</translation>
-    </message>
-    <message>
-        <source>Slope line, contour</source>
-        <comment>Name of symbol 101.1</comment>
-        <translation>示坡线</translation>
-    </message>
-    <message>
-        <source>Index contour</source>
-        <comment>Name of symbol 102</comment>
-        <translation>计曲线</translation>
-    </message>
-    <message>
-        <source>Contour value</source>
-        <comment>Name of symbol 102.1</comment>
-        <translation>等高线高度</translation>
-    </message>
-    <message>
-        <source>Form line</source>
-        <comment>Name of symbol 103</comment>
-        <translation>辅助等高线</translation>
-    </message>
-    <message>
-        <source>Large boulder</source>
-        <comment>Name of symbol 205</comment>
-        <translation type="unfinished">大石</translation>
-    </message>
-    <message>
-        <source>North lines pattern, blue</source>
-        <comment>Name of symbol 601.4</comment>
-        <translation>磁北线，蓝色</translation>
-    </message>
-    <message>
-        <source>Start</source>
-        <comment>Name of symbol 701</comment>
-        <translation>起点</translation>
-    </message>
-    <message>
-        <source>The place where the orienteering starts. The centre of the triangle shows the precise position where the orienteering course starts. The start must be on a clearly identifiable point on the map. The triangle points in the direction of the first control.</source>
-        <comment>Description of symbol 701</comment>
-        <translation>定向赛程的起点。三角形的中心位于赛程的确切起点。起点须为图上一个能够清晰辨认的点。三角形指向第一个控制点。</translation>
-    </message>
-    <message>
-        <source>Map issue point</source>
-        <comment>Name of symbol 702</comment>
-        <translation>发图点</translation>
-    </message>
-    <message>
-        <source>If there is a marked route to the start point, the map issue point is marked using this symbol.</source>
-        <comment>Description of symbol 702</comment>
-        <translation>倘若有指定路线前往起点，则派发地图的位置以此符号表示。</translation>
+        <source>Green</source>
+        <comment>Color 14</comment>
+        <translation>Zaļš</translation>
     </message>
 </context>
 <context>
     <name>ISOM2000</name>
     <message>
-        <source>Blue 50%</source>
-        <comment>Color 6</comment>
-        <translation>蓝色 50%</translation>
+        <source>Blue</source>
+        <comment>Color 5</comment>
+        <translation>Zils</translation>
     </message>
     <message>
-        <source>OpenOrienteering Orange</source>
-        <comment>Color 8</comment>
-        <translation>OpenOrinenteering橙色</translation>
-    </message>
-    <message>
-        <source>Green 60%</source>
-        <comment>Color 15</comment>
-        <translation>绿色 60%</translation>
-    </message>
-    <message>
-        <source>Green 30%</source>
-        <comment>Color 16</comment>
-        <translation>绿色 30%</translation>
-    </message>
-    <message>
-        <source>Yellow</source>
-        <comment>Color 18</comment>
-        <translation>黄色</translation>
-    </message>
-    <message>
-        <source>Yellow 50%</source>
-        <comment>Color 19</comment>
-        <translation>黄色 50%</translation>
-    </message>
-    <message>
-        <source>Contour</source>
-        <comment>Name of symbol 101</comment>
-        <translation>等高线</translation>
-    </message>
-    <message>
-        <source>Index contour</source>
-        <comment>Name of symbol 102</comment>
-        <translation>计曲线</translation>
-    </message>
-    <message>
-        <source>Form line</source>
-        <comment>Name of symbol 103</comment>
-        <translation>辅助等高线</translation>
-    </message>
-    <message>
-        <source>Contour value</source>
-        <comment>Name of symbol 105</comment>
-        <translation>等高线高度</translation>
-    </message>
-    <message>
-        <source>Rocky pits, holes or mineshafts which may constitute a danger to the runner. Location is the centre of gravity of the symbol, which is orientated to north.</source>
-        <comment>Description of symbol 204</comment>
-        <translation>岩坑、地洞，或矿井，可能对运动员构成危险。位于符号的重心。符号必须向北正置。</translation>
-    </message>
-    <message>
-        <source>Cave</source>
-        <comment>Name of symbol 205</comment>
-        <translation>山洞</translation>
-    </message>
-    <message>
-        <source>A cave is represented by the same symbol as a rocky pit. In this case the symbol should be orientated to point up the slope as indicated opposite. The centre of gravity of the symbol marks the opening.</source>
-        <comment>Description of symbol 205</comment>
-        <translation>山洞与岩坑以同一个符号表示，但表示山洞时，须将其尖端指向等高线较高一侧。符号的重心位于山洞的入口。</translation>
-    </message>
-    <message>
-        <source>Large boulder</source>
-        <comment>Name of symbol 207</comment>
-        <translation type="unfinished">大石</translation>
-    </message>
-    <message>
-        <source>A particularly large and distinct boulder. For gigantic boulders symbol 202 should be used.</source>
-        <comment>Description of symbol 207</comment>
-        <translation>大而明顯的岩石。更巨大的岩石應使用符號 202.</translation>
-    </message>
-    <message>
-        <source>North lines pattern, blue</source>
-        <comment>Name of symbol 601.3</comment>
-        <translation>磁北线，蓝色</translation>
-    </message>
-    <message>
-        <source>Start</source>
-        <comment>Name of symbol 701</comment>
-        <translation>起点</translation>
+        <source>Green</source>
+        <comment>Color 14</comment>
+        <translation>Zaļš</translation>
     </message>
 </context>
 <context>
@@ -2725,32 +2552,32 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Purple for course overprint</source>
         <comment>Color 0</comment>
-        <translation>路线叠印紫色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White for course overprint</source>
         <comment>Color 1</comment>
-        <translation>路线叠印白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 100%</source>
         <comment>Color 2</comment>
-        <translation>黑色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100%</source>
         <comment>Color 3</comment>
-        <translation>绿色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White for railway</source>
         <comment>Color 4</comment>
-        <translation>铁路符号的白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Purple for track symbols</source>
         <comment>Color 5</comment>
-        <translation>轨道符号的紫色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Purple 50%</source>
@@ -2760,12 +2587,12 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Blue 100%</source>
         <comment>Color 7</comment>
-        <translation>蓝色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Brown 100%</source>
         <comment>Color 8</comment>
-        <translation>棕色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 60%</source>
@@ -2780,7 +2607,7 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Black 20%</source>
         <comment>Color 11</comment>
-        <translation>黑色 20%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White over light brown</source>
@@ -2790,7 +2617,7 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Lower brown 50%</source>
         <comment>Color 13</comment>
-        <translation>下层棕色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lower brown 30%</source>
@@ -2805,12 +2632,12 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Blue 100% for area features</source>
         <comment>Color 16</comment>
-        <translation>面状符号填充蓝色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 70%</source>
         <comment>Color 17</comment>
-        <translation>蓝色 70%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 30%</source>
@@ -2825,12 +2652,12 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>OpenOrienteering Orange</source>
         <comment>Color 20</comment>
-        <translation>OpenOrinenteering橙色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White over green</source>
         <comment>Color 21</comment>
-        <translation>绿色上层的白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 50%/Yellow 100%</source>
@@ -2845,32 +2672,32 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Green 100% for area features</source>
         <comment>Color 24</comment>
-        <translation>面状符号填充绿色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 60%</source>
         <comment>Color 25</comment>
-        <translation>绿色 60%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 30%</source>
         <comment>Color 26</comment>
-        <translation>绿色 30%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100% for undergrowth</source>
         <comment>Color 27</comment>
-        <translation>低矮植被的绿色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White over yellow</source>
         <comment>Color 28</comment>
-        <translation>黄色上层的白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black for open land</source>
         <comment>Color 29</comment>
-        <translation>开阔地的黑色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 100%</source>
@@ -2880,12 +2707,12 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Yellow 50%</source>
         <comment>Color 31</comment>
-        <translation>黄色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Contour</source>
         <comment>Name of symbol 101</comment>
-        <translation>等高线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A line joining points of equal height.
@@ -2898,7 +2725,7 @@ However, contour lines shall be cut out for better legibility, if they touch the
     <message>
         <source>Slope line, contour</source>
         <comment>Name of symbol 101.1</comment>
-        <translation>示坡线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Slope lines may be drawn on the lower side of a contour line to clarify the direction of slope. When used, they should be placed in re-entrants.</source>
@@ -2908,7 +2735,7 @@ However, contour lines shall be cut out for better legibility, if they touch the
     <message>
         <source>Index contour</source>
         <comment>Name of symbol 102</comment>
-        <translation>计曲线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Every fifth contour shall be drawn with a thicker line. This is an aid to the quick assessment of height difference and the overall shape of the terrain surface. Where an index contour coincides with an area of much detail, it may be shown with symbol Contour (101).</source>
@@ -2928,7 +2755,7 @@ However, contour lines shall be cut out for better legibility, if they touch the
     <message>
         <source>Contour value</source>
         <comment>Name of symbol 102.2</comment>
-        <translation>等高线高度</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Contour values may be included to aid assessment of large height differences. The labels shall be orientated so that the top of the label is on the higher side of the contour. They are inserted in the index contours in positions where other detail is not obscured.</source>
@@ -2938,7 +2765,7 @@ However, contour lines shall be cut out for better legibility, if they touch the
     <message>
         <source>Form line</source>
         <comment>Name of symbol 103</comment>
-        <translation>辅助等高线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>An intermediate contour line. Form lines are used where more information can be given about the shape of the ground. They are used only where representation is not possible with ordinary contours. Only one form line may be used between neighbouring contours.</source>
@@ -3348,7 +3175,7 @@ Footprint: 2.4 m in diameter.</source>
     <message>
         <source>Large boulder</source>
         <comment>Name of symbol 205</comment>
-        <translation type="unfinished">大石</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A particularly large and distinct boulder.
@@ -4846,7 +4673,7 @@ North lines may be broken where they obscure small features such as boulders, kn
     <message>
         <source>North lines pattern, blue</source>
         <comment>Name of symbol 601.6</comment>
-        <translation>磁北线，蓝色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Magnetic north lines are lines placed on the map pointing to magnetic north. Their spacing shall be 30 mm, they represent 120 m on the ground.
@@ -4880,7 +4707,7 @@ North lines may be broken where they obscure small features such as boulders, kn
     <message>
         <source>Start</source>
         <comment>Name of symbol 701</comment>
-        <translation>起点</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The start or map issue point (if not at the start) is shown by an equilateral triangle which points in the direction of the first control.
@@ -4896,7 +4723,7 @@ The centre of the triangle shows the precise position of the start point.</sourc
     <message>
         <source>If there is a marked route to the start point, the map issue point is marked using this symbol.</source>
         <comment>Description of symbol 702</comment>
-        <translation>倘若有指定路线前往起点，则派发地图的位置以此符号表示。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Control point</source>
@@ -5078,74 +4905,14 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
 <context>
     <name>ISSOM</name>
     <message>
-        <source>Black 20%</source>
-        <comment>Color 8</comment>
-        <translation>黑色 20%</translation>
+        <source>Blue</source>
+        <comment>Color 17</comment>
+        <translation>Zils</translation>
     </message>
     <message>
-        <source>OpenOrienteering Orange</source>
-        <comment>Color 22</comment>
-        <translation>OpenOrinenteering橙色</translation>
-    </message>
-    <message>
-        <source>Green 60%</source>
-        <comment>Color 29</comment>
-        <translation>绿色 60%</translation>
-    </message>
-    <message>
-        <source>Green 30%</source>
-        <comment>Color 30</comment>
-        <translation>绿色 30%</translation>
-    </message>
-    <message>
-        <source>Yellow</source>
-        <comment>Color 32</comment>
-        <translation>黄色</translation>
-    </message>
-    <message>
-        <source>Yellow 50%</source>
-        <comment>Color 33</comment>
-        <translation>黄色 50%</translation>
-    </message>
-    <message>
-        <source>Contour</source>
-        <comment>Name of symbol 101</comment>
-        <translation>等高线</translation>
-    </message>
-    <message>
-        <source>Index contour</source>
-        <comment>Name of symbol 102</comment>
-        <translation>计曲线</translation>
-    </message>
-    <message>
-        <source>Form line</source>
-        <comment>Name of symbol 103</comment>
-        <translation>辅助等高线</translation>
-    </message>
-    <message>
-        <source>Contour value</source>
-        <comment>Name of symbol 105</comment>
-        <translation>等高线高度</translation>
-    </message>
-    <message>
-        <source>Cave</source>
-        <comment>Name of symbol 205</comment>
-        <translation>山洞</translation>
-    </message>
-    <message>
-        <source>Large boulder</source>
-        <comment>Name of symbol 207</comment>
-        <translation type="unfinished">大石</translation>
-    </message>
-    <message>
-        <source>North lines pattern, blue</source>
-        <comment>Name of symbol 601.0.6</comment>
-        <translation>磁北线，蓝色</translation>
-    </message>
-    <message>
-        <source>Start</source>
-        <comment>Name of symbol 701</comment>
-        <translation>起点</translation>
+        <source>Green</source>
+        <comment>Color 28</comment>
+        <translation>Zaļš</translation>
     </message>
 </context>
 <context>
@@ -5188,7 +4955,7 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>OpenOrienteering Orange</source>
         <comment>Color 7</comment>
-        <translation>OpenOrinenteering橙色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Opaque Blue</source>
@@ -5198,12 +4965,12 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Blue</source>
         <comment>Color 9</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zils</translation>
     </message>
     <message>
         <source>Blue 50%</source>
         <comment>Color 10</comment>
-        <translation>蓝色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 30%</source>
@@ -5238,17 +5005,17 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Green</source>
         <comment>Color 17</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zaļš</translation>
     </message>
     <message>
         <source>Green 60%</source>
         <comment>Color 18</comment>
-        <translation>绿色 60%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 30%</source>
         <comment>Color 19</comment>
-        <translation>绿色 30%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green below light greens</source>
@@ -5258,12 +5025,12 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Yellow</source>
         <comment>Color 21</comment>
-        <translation>黄色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 50%</source>
         <comment>Color 22</comment>
-        <translation>黄色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White over Yellow 70%</source>
@@ -5278,7 +5045,7 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Contour</source>
         <comment>Name of symbol 101</comment>
-        <translation>等高线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A line joining points of equal height. The standard vertical interval between contours is 5 metres. The smallest bend in a contour is 0.25 mm from centre to centre of the lines.</source>
@@ -5288,7 +5055,7 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Index contour</source>
         <comment>Name of symbol 102</comment>
-        <translation>计曲线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Every fifth contour shall be drawn with a thicker line. This is an aid to the quick assessment of height difference and the overall shape of the terrain surface. Where an index contour coincides with an area of much detail, it may be shown with a normal contour line.</source>
@@ -5308,7 +5075,7 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Contour value</source>
         <comment>Name of symbol 105</comment>
-        <translation>等高线高度</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Contour values may be included to aid assessment of large height differences. They are inserted in the index contours in positions where other detail is not obscured. The figures should be orientated so that the top of the figure is on the higher side of the contour.</source>
@@ -6061,7 +5828,7 @@ cross, it shall be marked with the symbol 707 (uncrossable boundary).</source>
     <message>
         <source>North lines pattern, blue</source>
         <comment>Name of symbol 601.3</comment>
-        <translation>磁北线，蓝色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Registration mark</source>
@@ -6096,7 +5863,7 @@ cross, it shall be marked with the symbol 707 (uncrossable boundary).</source>
     <message>
         <source>Start</source>
         <comment>Name of symbol 701</comment>
-        <translation>起点</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The start or map issue point (if not at the start) is shown by an equilateral triangle which points in the direction of the first control. The centre of the triangle shows the precise position of the start point.</source>
@@ -6149,10 +5916,7 @@ cross, it shall be marked with the symbol 707 (uncrossable boundary).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A marked route is shown on the map with a dashed line. If the symbol is used instead
-of symbol 704 before or after a control, it represents an obligatory route for the
-competitors. The symbol can also be used in areas where off-track riding is forbidden
-to represent allowed routes that are marked in the terrain.</source>
+        <source>A marked route is shown on the map with a dashed line. If the symbol is used instead of symbol 704 before or after a control, it represents an obligatory route for the competitors. The symbol can also be used in areas where off-track riding is forbidden to represent allowed routes that are marked in the terrain.</source>
         <comment>Description of symbol 705</comment>
         <translation type="unfinished"></translation>
     </message>
@@ -6207,11 +5971,7 @@ to represent allowed routes that are marked in the terrain.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A route which is out-of-bounds and forbidden to cross is shown with a zigzag. The
-zigzag line should be as continuous as possible. If there is a crossing point over the
-forbidden route, it shall be presented like a gate by two perpendicular lines over the
-forbidden route. Also a longer crossing section shall be presented clearly on the map
-by using the perpendicular lines at the end of the zigzag lines.</source>
+        <source>A route which is out-of-bounds and forbidden to cross is shown with a zigzag. The zigzag line should be as continuous as possible. If there is a crossing point over the forbidden route, it shall be presented like a gate by two perpendicular lines over the forbidden route. Also a longer crossing section shall be presented clearly on the map by using the perpendicular lines at the end of the zigzag lines.</source>
         <comment>Description of symbol 711.1</comment>
         <translation type="unfinished"></translation>
     </message>
@@ -6280,7 +6040,7 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Form line</source>
         <comment>Name of symbol 103</comment>
-        <translation>辅助等高线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>An intermediate contour line. Form lines are used where more information can be given about the shape of the ground. They are used only where representation is not possible with ordinary contours. Only one form line may be used between neighbouring contours.</source>
@@ -6445,27 +6205,27 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Rocky pits, holes or mineshafts which may constitute a danger to the runner. Location is the centre of gravity of the symbol, which is orientated to north.</source>
         <comment>Description of symbol 204</comment>
-        <translation>岩坑、地洞，或矿井，可能对运动员构成危险。位于符号的重心。符号必须向北正置。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cave</source>
         <comment>Name of symbol 205</comment>
-        <translation>山洞</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A cave is represented by the same symbol as a rocky pit. In this case the symbol should be orientated to point up the slope as indicated opposite. The centre of gravity of the symbol marks the opening.</source>
         <comment>Description of symbol 205</comment>
-        <translation>山洞与岩坑以同一个符号表示，但表示山洞时，须将其尖端指向等高线较高一侧。符号的重心位于山洞的入口。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Large boulder</source>
         <comment>Name of symbol 207</comment>
-        <translation type="unfinished">大石</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A particularly large and distinct boulder. For gigantic boulders symbol 202 should be used.</source>
         <comment>Description of symbol 207</comment>
-        <translation>大而明顯的岩石。更巨大的岩石應使用符號 202.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boulder field</source>
@@ -6942,89 +6702,14 @@ Note: if the stream is wider than 0.25mm, adjust this symbol so it extends 0.5mm
 <context>
     <name>ISSkiOM</name>
     <message>
-        <source>OpenOrienteering Orange</source>
-        <comment>Color 7</comment>
-        <translation>OpenOrinenteering橙色</translation>
+        <source>Blue</source>
+        <comment>Color 9</comment>
+        <translation>Zils</translation>
     </message>
     <message>
-        <source>Blue 50%</source>
-        <comment>Color 10</comment>
-        <translation>蓝色 50%</translation>
-    </message>
-    <message>
-        <source>Green 60%</source>
-        <comment>Color 17</comment>
-        <translation>绿色 60%</translation>
-    </message>
-    <message>
-        <source>Green 30%</source>
-        <comment>Color 18</comment>
-        <translation>绿色 30%</translation>
-    </message>
-    <message>
-        <source>Yellow</source>
-        <comment>Color 20</comment>
-        <translation>黄色</translation>
-    </message>
-    <message>
-        <source>Yellow 50%</source>
-        <comment>Color 21</comment>
-        <translation>黄色 50%</translation>
-    </message>
-    <message>
-        <source>Contour</source>
-        <comment>Name of symbol 101</comment>
-        <translation>等高线</translation>
-    </message>
-    <message>
-        <source>Index contour</source>
-        <comment>Name of symbol 102</comment>
-        <translation>计曲线</translation>
-    </message>
-    <message>
-        <source>Form line</source>
-        <comment>Name of symbol 103</comment>
-        <translation>辅助等高线</translation>
-    </message>
-    <message>
-        <source>Contour value</source>
-        <comment>Name of symbol 105</comment>
-        <translation>等高线高度</translation>
-    </message>
-    <message>
-        <source>Large boulder</source>
-        <comment>Name of symbol 207</comment>
-        <translation type="unfinished">大石</translation>
-    </message>
-    <message>
-        <source>A particularly large and distinct boulder. For gigantic boulders symbol 202 should be used.</source>
-        <comment>Description of symbol 207</comment>
-        <translation>大而明顯的岩石。更巨大的岩石應使用符號 202.</translation>
-    </message>
-    <message>
-        <source>North lines pattern, blue</source>
-        <comment>Name of symbol 601.3</comment>
-        <translation>磁北线，蓝色</translation>
-    </message>
-    <message>
-        <source>Start</source>
-        <comment>Name of symbol 701</comment>
-        <translation>起点</translation>
-    </message>
-    <message>
-        <source>Rocky pits, holes or mineshafts which may constitute a danger to the runner. Location is the centre of gravity of the symbol, which is orientated to north.</source>
-        <comment>Description of symbol 204</comment>
-        <translation>岩坑、地洞，或矿井，可能对运动员构成危险。位于符号的重心。符号必须向北正置。</translation>
-    </message>
-    <message>
-        <source>Cave</source>
-        <comment>Name of symbol 205</comment>
-        <translation>山洞</translation>
-    </message>
-    <message>
-        <source>A cave is represented by the same symbol as a rocky pit. In this case the symbol should be orientated to point up the slope as indicated opposite. The centre of gravity of the symbol marks the opening.</source>
-        <comment>Description of symbol 205</comment>
-        <translation>山洞与岩坑以同一个符号表示，但表示山洞时，须将其尖端指向等高线较高一侧。符号的重心位于山洞的入口。</translation>
+        <source>Green</source>
+        <comment>Color 16</comment>
+        <translation>Zaļš</translation>
     </message>
 </context>
 <context>
@@ -7032,12 +6717,12 @@ Note: if the stream is wider than 0.25mm, adjust this symbol so it extends 0.5mm
     <message>
         <source>Purple for course overprint</source>
         <comment>Color 0</comment>
-        <translation>路线叠印紫色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White for course overprint</source>
         <comment>Color 1</comment>
-        <translation>路线叠印白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green for SkiO</source>
@@ -7047,172 +6732,172 @@ Note: if the stream is wider than 0.25mm, adjust this symbol so it extends 0.5mm
     <message>
         <source>Black 100%</source>
         <comment>Color 3</comment>
-        <translation>黑色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100%</source>
         <comment>Color 4</comment>
-        <translation>绿色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White for railway</source>
         <comment>Color 5</comment>
-        <translation>铁路符号的白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 100%</source>
         <comment>Color 6</comment>
-        <translation>蓝色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Brown 100%</source>
         <comment>Color 7</comment>
-        <translation>棕色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Purple for track symbols</source>
         <comment>Color 8</comment>
-        <translation>轨道符号的紫色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black below purple for track symbols</source>
         <comment>Color 9</comment>
-        <translation>轨道符号紫色下面的黑色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 65%</source>
         <comment>Color 10</comment>
-        <translation>黑色 65%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 20%</source>
         <comment>Color 11</comment>
-        <translation>黑色 20%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Upper brown 50%</source>
         <comment>Color 12</comment>
-        <translation>上层棕色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black below upper brown 50%</source>
         <comment>Color 13</comment>
-        <translation>上层棕色 50%下的黑色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lower brown 50%</source>
         <comment>Color 14</comment>
-        <translation>下层棕色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black below lower brown 50%</source>
         <comment>Color 15</comment>
-        <translation>下层棕色 50%下的黑色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 100% for area features</source>
         <comment>Color 16</comment>
-        <translation>面状符号填充蓝色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 70%</source>
         <comment>Color 17</comment>
-        <translation>蓝色 70%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blue 50%</source>
         <comment>Color 18</comment>
-        <translation>蓝色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OpenOrienteering Orange</source>
         <comment>Color 19</comment>
-        <translation>OpenOrinenteering橙色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 100% for narrow ride</source>
         <comment>Color 20</comment>
-        <translation>狭窄行车道用的黄色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 60% for narrow ride</source>
         <comment>Color 21</comment>
-        <translation>狭窄行车道用的绿色 60%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 30% for narrow ride</source>
         <comment>Color 22</comment>
-        <translation>狭窄行车道用的绿色 30%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White over green</source>
         <comment>Color 23</comment>
-        <translation>绿色上层的白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 100%/Green 50%</source>
         <comment>Color 24</comment>
-        <translation>黄色 100%/绿色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black 25% (Grey)</source>
         <comment>Color 25</comment>
-        <translation>黑色 25%（灰色）</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100%/Black 50%</source>
         <comment>Color 26</comment>
-        <translation>绿色 100%/黑色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100% for area features</source>
         <comment>Color 27</comment>
-        <translation>面状符号填充绿色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 60%</source>
         <comment>Color 28</comment>
-        <translation>绿色 60%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 30%</source>
         <comment>Color 29</comment>
-        <translation>绿色 30%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Green 100% for undergrowth</source>
         <comment>Color 30</comment>
-        <translation>低矮植被的绿色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>White over yellow</source>
         <comment>Color 31</comment>
-        <translation>黄色上层的白色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Black for open land</source>
         <comment>Color 32</comment>
-        <translation>开阔地的黑色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow</source>
         <comment>Color 33</comment>
-        <translation>黄色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 100% for area features</source>
         <comment>Color 34</comment>
-        <translation>面状符号填充黄色 100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yellow 50%</source>
         <comment>Color 35</comment>
-        <translation>黄色 50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Contour</source>
         <comment>Name of symbol 101</comment>
-        <translation>等高线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A line joining points of equal height. The standard vertical interval between contours is 5 m. A contour interval of 2.5 m may be used for flat terrains.
@@ -7226,66 +6911,52 @@ The minimum length of a contour knoll is 0.9 mm (footprint 13.5 m) and the minim
 A depression must accommodate a slope line, so the minimum length is 1.1 mm (footprint 16.5 m) and the minimum width is 0.7 mm (footprint 10.5 m) outside measure. Smaller, prominent depressions can be represented using symbol Small depression (111) or they can be exaggerated to satisfy the minimum dimension.
 Contours should be adapted (not broken) in order not to touch symbol Small knoll (109) or Small elongated knoll (110).</source>
         <comment>Description of symbol 101</comment>
-        <translation>等高的连接点。等高线之间的标准垂直距离是5米。平坦地形的等高线间距为2.5米。
-在等高线的下侧可以画出坡度线，以明确坡度的方向。当使用时，他们应该放在山凹。
-闭合的轮廓表示一个小山丘或洼地。凹地必须至少有一条斜线。最低高度/深度应为1米。
-相邻的等高线之间的关系很重要。相邻的等高线表示形状和结构。轮廓上的小细节应该避免，因为它们往往掩盖了地形的主要特征。
-如洼地、山凹、山凸、土坎和台地等突出的特征可能需要被夸大。
-绝对高度精度并不重要，但相邻地物之间的相对高度差应尽可能准确地表示在地图上。允许稍微改变轮廓的高度，如果这样可以改进特征的表示。该偏差不应超过等值线间距的25%，应注意相邻特征。
-等高线上的弯道最小为中线至中线0.25毫米(脚印4米)。重入中线或支线的开口，由中线至中线的宽度必须超过0.5毫米(脚印8米)。
-轮廓丘的最小长度为0.9毫米(足迹13.5米)，最小宽度为0.6毫米(足迹9米)。小而突出的小山丘可以用符号Small knoll(109)或小而细长的knoll(110)来表示，也可以在地图上夸张以满足最小维度。
-洼地必须能容纳一条斜坡线，因此最小长度为1.1毫米(占地16.5米)，最小宽度为0.7毫米(占地10.5米)。更小、突出的凹陷可以用符号Small depression(111)表示，也可以通过夸张来满足最小维度。
-为了不接触符号小丘(109)或小伸长丘(110)，轮廓应适应(不破坏)。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Slope line, contour</source>
         <comment>Name of symbol 101.1</comment>
-        <translation>示坡线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Slope lines may be drawn on the lower side of a contour line to clarify the direction of slope. When used, they should be placed in re-entrants.
 A depression has to have at least one slope line.</source>
         <comment>Description of symbol 101.1</comment>
-        <translation>示坡线可画在等高线较低一侧，以说明斜坡的方向。使用时，应画在山窝内。
-陷地必须绘有至少一条示坡线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Index contour</source>
         <comment>Name of symbol 102</comment>
-        <translation>计曲线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Every fifth contour shall be drawn with a thicker line. This is an aid to the quick assessment of height difference and the overall shape of the terrain surface.
 An index contour may be represented as an ordinary contour line in an area with much detail. Small contour knolls and depressions are normally not represented using index contours.
 The index contour level must be carefully selected in flat terrain. The ideal level for the index contour is the central contour in the most prominent slopes.</source>
         <comment>Description of symbol 102</comment>
-        <translation>每第五条等高线须以较粗的线绘画，俾使读图者快速判读出高度差，及地势的大概形状。
-在很细致的区域内，计曲线也可画成一般等高线。表示小丘或陷地的等高线通常不画成计曲线。
-在平坦区域内，须小心选择计曲线的高度。计曲线的理想高度是最显著的斜坡的中央。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Contour value</source>
         <comment>Name of symbol 102.1</comment>
-        <translation>等高线高度</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>An index contour may have a height value assigned. A height value should only be inserted in an index contour in places where other detail is not obscured. It shall be orientated so that the top of the label is on the higher side of the contour. The index value (label) shall be 1.5 mm high and represented in a sans-serif font.</source>
         <comment>Description of symbol 102.1</comment>
-        <translation>可以显示计曲线的高度。高度值不应遮挡其他细节。数字的方向应使得数字的顶部位于等高线较高一侧。高度值须为 1.5 mm 高，并以无衬线体表示。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Form line</source>
         <comment>Name of symbol 103</comment>
-        <translation>辅助等高线</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Form lines are used where more information must be given about the shape of the ground. Form lines are added only where representation would be incomplete with ordinary contours. They shall not be used as intermediate contours. Only one form line should be used between neighbouring contours. It is very important that a form line fits logically into the contour system, so the start and end of a form line should be parallel to the neighbouring contours. The gaps between the form line dashes must be placed on reasonably straight sections of the form line. Form lines can be used to differentiate flat knolls and depressions from more distinct ones (minimum height / depth should be 1 m). Excessive use of form lines must be avoided as this disturbs the three-dimensional picture of the ground shape and will complicate map reading.
 Minimum length (non-closed): two dashes.
 Minimum length of a form line, knoll or depression: 1.1 mm (footprint 16.5 m)</source>
         <comment>Description of symbol 103</comment>
-        <translation type="unfinished">在必须提供有关地面形状的更多信息的地方使用了成型线。仅在用普通轮廓表示不完整的地方添加表格线。它们不得用作中间轮廓。相邻轮廓之间只能使用一条造型线。形状线在逻辑上适合轮廓系统非常重要，因此形状线的起点和终点应与相邻轮廓平行。成型线虚线之间的间隙必须放置在成型线的合理直线部分上。模板线可用于区分平面山丘和凹陷与更明显的凹陷（最小高度/深度应为1 m）。必须避免过度使用模板线，因为这会干扰地面形状的三维图像，并使地图读取变得复杂。
-最小长度（非闭合）：两个破折号。
-模板线，小节或凹陷的最小长度：1.1毫米（占地面积16.5 m）</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Slope line, formline</source>
@@ -7574,7 +7245,7 @@ of the boulders.</source>
     <message>
         <source>Large boulder</source>
         <comment>Name of symbol 205</comment>
-        <translation type="unfinished">大石</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A particularly large and distinct boulder. A large boulder should be more than 2 m high.
@@ -8433,8 +8104,7 @@ Footprint: 12 m x 12 m.</source>
         <source>Magnetic north lines are lines placed on the map pointing to magnetic north, parallel to the sides of the paper. Their spacing on the map shall be 20 mm on the map which represents 300 m on the ground at the scale of 1:15 000. If the map is enlarged to 1:10 000, the spacing of the lines will be 30 mm on the map.
 North lines shall be broken to improve the legibility of the map, for instance where they would obscure small features. In areas with very few water features, blue lines may be used.</source>
         <comment>Description of symbol 601.1</comment>
-        <translation>磁北线在地图上指向磁北方，与纸的一边平行。在 1:15,000 地图上，其间隔应为 20 mm, 对应实地 300 m. 倘地图放大至 1:10,000, 则磁北线间隔应为 30 mm.
-如果将磁北线断开可以使地图更可读，则须将之断开，例如当磁北线会遮挡细小的特征物时。在很少水文特征的区域，可以使用蓝线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>North lines pattern</source>
@@ -8445,8 +8115,7 @@ North lines shall be broken to improve the legibility of the map, for instance w
         <source>Magnetic north lines are lines placed on the map pointing to magnetic north, parallel to the sides of the paper. Their spacing on the map shall be 20 mm on the map which represents 300 m on the ground at the scale of 1:15 000. If the map is enlarged to 1:10 000, the spacing of the lines will be 30 mm on the map.
 North lines shall be broken to improve the legibility of the map, for instance where they would obscure small features. In areas with very few water features, blue lines may be used.</source>
         <comment>Description of symbol 601.2</comment>
-        <translation>磁北线在地图上指向磁北方，与纸的一边平行。在 1:15,000 地图上，其间隔应为 20 mm, 对应实地 300 m. 倘地图放大至 1:10,000, 则磁北线间隔应为 30 mm.
-如果将磁北线断开可以使地图更可读，则须将之断开，例如当磁北线会遮挡细小的特征物时。在很少水文特征的区域，可以使用蓝线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Magnetic north line, blue</source>
@@ -8457,40 +8126,38 @@ North lines shall be broken to improve the legibility of the map, for instance w
         <source>Magnetic north lines are lines placed on the map pointing to magnetic north, parallel to the sides of the paper. Their spacing on the map shall be 20 mm on the map which represents 300 m on the ground at the scale of 1:15 000. If the map is enlarged to 1:10 000, the spacing of the lines will be 30 mm on the map.
 North lines shall be broken to improve the legibility of the map, for instance where they would obscure small features. In areas with very few water features, blue lines may be used.</source>
         <comment>Description of symbol 601.3</comment>
-        <translation>磁北线在地图上指向磁北方，与纸的一边平行。在 1:15,000 地图上，其间隔应为 20 mm, 对应实地 300 m. 倘地图放大至 1:10,000, 则磁北线间隔应为 30 mm.
-如果将磁北线断开可以使地图更可读，则须将之断开，例如当磁北线会遮挡细小的特征物时。在很少水文特征的区域，可以使用蓝线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>North lines pattern, blue</source>
         <comment>Name of symbol 601.4</comment>
-        <translation>磁北线，蓝色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Magnetic north lines are lines placed on the map pointing to magnetic north, parallel to the sides of the paper. Their spacing on the map shall be 20 mm on the map which represents 300 m on the ground at the scale of 1:15 000. If the map is enlarged to 1:10 000, the spacing of the lines will be 30 mm on the map.
 North lines shall be broken to improve the legibility of the map, for instance where they would obscure small features. In areas with very few water features, blue lines may be used.</source>
         <comment>Description of symbol 601.4</comment>
-        <translation>磁北线在地图上指向磁北方，与纸的一边平行。在 1:15,000 地图上，其间隔应为 20 mm, 对应实地 300 m. 倘地图放大至 1:10,000, 则磁北线间隔应为 30 mm.
-如果将磁北线断开可以使地图更可读，则须将之断开，例如当磁北线会遮挡细小的特征物时。在很少水文特征的区域，可以使用蓝线。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start</source>
         <comment>Name of symbol 701</comment>
-        <translation>起点</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The place where the orienteering starts. The centre of the triangle shows the precise position where the orienteering course starts. The start must be on a clearly identifiable point on the map. The triangle points in the direction of the first control.</source>
         <comment>Description of symbol 701</comment>
-        <translation>定向赛程的起点。三角形的中心位于赛程的确切起点。起点须为图上一个能够清晰辨认的点。三角形指向第一个控制点。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Map issue point</source>
         <comment>Name of symbol 702</comment>
-        <translation>发图点</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>If there is a marked route to the start point, the map issue point is marked using this symbol.</source>
         <comment>Description of symbol 702</comment>
-        <translation>倘若有指定路线前往起点，则派发地图的位置以此符号表示。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Control point and focus point</source>
@@ -8828,7 +8495,7 @@ The purple line will extend a bit into the finish symbol. This is a shortcoming 
     <message>
         <source>Start</source>
         <comment>Name of symbol 701</comment>
-        <translation>起点</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The start or map issue point (if not at the start) is shown by an equilateral triangle which points in the direction of the first control. The centre of the triangle shows the precise position of the start point.</source>
@@ -9260,7 +8927,7 @@ Map symbol: ISOM 106</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A narrow wall of earth projecting above the surrounding terrain; may be partially stone faced, usually man-made. Used with symbol 8.11 to indicate a ruined earth wall.s
+        <source>A narrow wall of earth projecting above the surrounding terrain; may be partially stone faced, usually man-made. Used with symbol 8.11 to indicate a ruined earth wall.
 
 Map symbols: ISOM 107, 108</source>
         <comment>Description of symbol 1.6</comment>
